@@ -1,0 +1,267 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-color: #f2f2f2;
+}
+
+.container {
+    
+    box-sizing: border-box;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.head {
+    height: 30px;
+    background-color: #FFD700; 
+}
+
+.main {
+
+    padding: 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.main p {
+    font-size: 26px;
+    font-weight: 800;
+    color: #333333;
+    margin: 0px;
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.icon1, .icon2, .icon3 {
+    margin-left: 10px; 
+    width: 20px;
+    height: 20px;
+}
+
+.none {
+    display: none; 
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 55px 10px 10px; 
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    white-space: normal; 
+    word-wrap: break-word;
+}
+
+.clear-icon {
+    position: absolute;
+    right: 30px; 
+    top: 50%;
+    transform: translateY(-50%); 
+    width: 20px;
+    height: 20px;
+}
+
+.sort-icon {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%); 
+    width: 20px;
+    height: 20px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.todo-list {
+    display: none;
+    overflow-y: auto;
+    list-style-type: decimal; 
+    padding: 0;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fff;
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+}
+
+.todo-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    padding: 10px 20px;
+    border-bottom: none;
+    word-wrap: break-word; 
+    word-break: break-word;
+}
+
+.clear-icon-li {
+    width: 20px; 
+    height: 20px;
+    margin-left: 10px;
+    transition: transform 0.2s ease;
+}
+
+.button-container{
+    display: flex;
+    border-radius: 25px;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 30px;
+    background-color: #8c3bd9;
+}
+
+.plus-btn{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #a259ff;
+    border: none;
+    color: white;;
+    font-size: 20px;
+    border-radius: 50%;
+    flex-shrink: 0; 
+}
+
+.add-btn{
+    width: 0px;
+    height: 45px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding-left: 20px;
+    background-color: #8c3bd9;
+}
+
+
+
+
+/*mobil telefonlar*/
+@media (max-width: 480px) {
+    .container {
+        width: 200px;
+    }
+
+    .main p {
+        font-size: 22px;
+    }
+
+    .input-group input {
+        font-size: 14px;
+        padding: 8px 48px 8px 8px;
+    }
+
+    .todo-list {
+        max-height: 150px;
+    }
+
+    .button-container {
+        width: 130px;
+        margin-left: 10%;
+    }
+
+    .plus-btn {
+        width: 42px;
+        height: 44px;
+        font-size: 18px;
+    }
+
+    .add-btn {
+        font-size: 14px;
+        padding-left: 10px;
+    }
+
+    .icon1, .icon2, .icon3 {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+/* planşetlər */
+@media (min-width: 481px) and (max-width: 768px) {
+    .container {
+        width: 260px;
+    }
+
+    .main p {
+        font-size: 24px;
+    }
+
+    .input-group input {
+        font-size: 15px;
+        padding: 10px 50px 10px 10px;
+    }
+
+    .button-container {
+        width: 150px;
+        margin-left: 15%;
+    }
+
+    .plus-btn {
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+    }
+
+    .add-btn {
+        font-size: 16px;
+        padding-left: 15px;
+    }
+}
+
+/* kompüterlər */
+@media (min-width: 769px) {
+    .container {
+        width: 350px;
+    }
+
+    .main p {
+        font-size: 26px;
+    }
+
+    .input-group input {
+        font-size: 16px;
+        padding: 10px 55px 10px 10px;
+    }
+
+    .button-container {
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    .plus-btn {
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+    }
+
+    .add-btn {
+        font-size: 16px;
+        padding-left: 20px;
+    }
+}
